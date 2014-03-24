@@ -9,8 +9,14 @@
             <div class="units-row case-studies"><% loop $Children %>
                 <p class="unit-33">
                     <a href="{$Link}">
-                        $SummaryImage.CroppedImage(256,256)
+                        <% if $SummaryImage %>
+                            $SummaryImage.CroppedImage(256,256)
+                        <% else_if $Images.exists() %>
+                            $Images.sort('SortOrder').first().CroppedImage(256,256)
+                        <% end_if %>
+
                         <br/>
+
                         <strong>$Title</strong>
                     </a>
                 </p>

@@ -1,6 +1,6 @@
 <?php
 
-class CaseStudy extends Page {
+class CaseStudy extends GalleryPage {
     private static $icon = "casestudy/images/casestudy.png";
 
     private static $description = "Display a case study";

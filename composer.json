@@ -2,8 +2,8 @@
   "name": "i-lateral/silverstripe-casestudy",
     "description": "A Case Study module for Silverstripe",
     "type": "silverstripe-module",
-    "homepage": "http://github.com/i-lateral/silverstripe-carousel",
-    "keywords": ["silverstripe", "case", "study"],
+    "homepage": "http://github.com/i-lateral/silverstripe-casestudy",
+    "keywords": ["silverstripe","case","study","studies","gallery","work"],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -16,7 +16,8 @@
     },
     "require": {
         "silverstripe/framework": ">=3.1",
-        "silverstripe/cms": ">=3.1"
+        "silverstripe/cms": ">=3.1",
+        "i-lateral/silverstripe-gallery": *
     },
     "extra": {
         "installer-name": "casestudy"
