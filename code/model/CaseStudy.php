@@ -1,6 +1,7 @@
 <?php
 
-class CaseStudy extends GalleryPage {
+class CaseStudy extends GalleryPage
+{
     private static $icon = "casestudy/images/casestudy.png";
 
     private static $description = "Display a case study";
@@ -13,10 +14,11 @@ class CaseStudy extends GalleryPage {
         "SummaryImage" => "Image"
     );
 
-    public function getCMSFields() {
+    public function getCMSFields()
+    {
         $fields = parent::getCMSFields();
 
-        if(!$image_field = $fields->dataFieldByName("SummaryImage")) {
+        if (!$image_field = $fields->dataFieldByName("SummaryImage")) {
             $image_field = UploadField::create("SummaryImage", "Image to use")
                 ->setFolderName("casestudies");
 
