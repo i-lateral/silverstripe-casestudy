@@ -1,5 +1,9 @@
 <?php
 
+namespace ilateral\SilverStripe\CaseStudy\Model;
+
+use Page;
+
 class CaseStudyHub extends Page
 {
     private static $icon = "casestudy/images/casestudyhub.png";

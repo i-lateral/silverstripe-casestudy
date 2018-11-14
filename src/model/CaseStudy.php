@@ -1,5 +1,10 @@
 <?php
 
+namespace ilateral\SilverStripe\CaseStudy\Model;
+
+use SilverStripe\AssetAdmin\Forms\UploadField;
+use ilateral\SilverStripe\Gallery\Model\GalleryPage;
+
 class CaseStudy extends GalleryPage
 {
     private static $icon = "casestudy/images/casestudy.png";

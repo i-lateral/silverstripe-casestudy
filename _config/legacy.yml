@@ -1,0 +1,9 @@
+---
+Name: cmslegacy
+---
+SilverStripe\ORM\DatabaseAdmin:
+  classname_value_remapping:
+    CaseStudy: ilateral\SilverStripe\CaseStudy\Model\CaseStudy
+    CaseStudyHub: ilateral\SilverStripe\CaseStudy\Model\CaseStudyHub
+    CaseStudy_Controller: ilateral\SilverStripe\CaseStudy\Control\CaseStudy_Controller
+    CaseStudyHub_Controller: ilateral\SilverStripe\CaseStudy\Control\CaseStudyHub_Controller

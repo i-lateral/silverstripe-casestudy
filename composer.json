@@ -1,7 +1,7 @@
 {
   "name": "i-lateral/silverstripe-casestudy",
     "description": "A Case Study module for Silverstripe",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
     "homepage": "http://github.com/i-lateral/silverstripe-casestudy",
     "keywords": ["silverstripe","case","study","studies","gallery","work"],
     "license": "BSD-3-Clause",
@@ -15,11 +15,13 @@
         "issues": "http://github.com/i-lateral/silverstripe-casestudy/issues"
     },
     "require": {
-        "silverstripe/framework": ">=3.1",
-        "silverstripe/cms": ">=3.1",
-        "i-lateral/silverstripe-gallery": "*"
+        "silverstripe/framework": "^4.1",
+        "silverstripe/cms": "^4.1",
+        "i-lateral/silverstripe-gallery": "^2.1"
     },
-    "extra": {
-        "installer-name": "casestudy"
+    "autoload": {
+        "psr-4": {
+            "ilateral\\SilverStripe\\CaseStudy\\": "src/"
+        }
     }
 }
